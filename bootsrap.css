@@ -7,7 +7,7 @@
 }
 body {
     font-family: "sora", sans-serif;
-    overflow:hidden;
+    /* overflow:hidden; */
     background-color: rgb(148, 168, 185); 
 }
 .wrapper{
@@ -27,8 +27,8 @@ body {
     padding: 0.9rem 1.9rem;
     background-color: rgb(157, 157, 211);
     border-radius: 50px;
-    /* float: right; */
-    /* justify-content: space-between; */
+    float: right; 
+    justify-content: space-between; 
     margin: 10px;
 }
 header{
@@ -51,7 +51,7 @@ nav{
 nav .logo{
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
-    /* font-weight: ; */
+    font-weight: ;
 }
 .section1{
     text-align: center;
@@ -64,14 +64,15 @@ nav .logo{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-.container{
-     margin-top: 25%; 
+.found{
+    margin-top: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .container{
+    /* display: none; */
     background: #fff;
     width: 410px;
     padding: 30px;
@@ -82,13 +83,16 @@ nav .logo{
     font-weight: 600;
     text-align: center;
 }
-.container .form{
-    margin-top: -20px;
+.container form{
+     margin-top: -20px; 
+}
+h3{
+    text-align: center;
 }
 .container form .data{
      height: 45px;
      width: 100%;
-     margin 40px 0;
+     margin 40px; 0;
 }
 form .data label{
     font-size: 18px;
@@ -116,12 +120,15 @@ form .btn .inner{
     background: -webkit-linear-gradient(right, #4c4c );
 
 }
-form .btn button{
+.found button{
+    padding: 0.9rem 1.9rem;
+    background-color: rgb(157, 157, 211);
+    border-radius: 50px; 
     height: 100%;
     width: 100%;
-    background: none;
+    /* background: none; */
     border: none;
-    color: #fff;
+    /* color: rgb(189, 22, 22); */
     font-size: 18px;
     font-weight: 500;
 }

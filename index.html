@@ -12,7 +12,7 @@
     <div class="wrapper">
         <header>
             <nav>
-                <div class="logo"> <h3>Lost And found center</h3></div>
+                <div class="logo" id="login"> <h3>Lost And found center</h3></div>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -45,9 +45,43 @@
     <div class="section1">
         <h3 style="color: blue;"><h3><a href="#">You Lost It? We Found It Here</a></h3>
     </div>
-    
-    <div class="report"><p> <a> report a lost item here</a> </p></div>
-    <div class="center">
+    <div class="found">
+        <button class="show"><h4>Report Found property</h4></button>
+        
+        <div class="container">
+            <form action="#">
+                <div class="data">
+                 <label for="founditem"></label>
+                 <input type = "text" id="found" name = "item-name" placeholder="describe item by name">
+                </div>
+                
+                <div class="data">
+                 <label for="location"></label>
+                 <input type="text" id="pin" name="address" placeholder="Enter Location Where item was recovered">
+                </div>
+                
+                <div class="data">
+                 <label for="owner-info"></label>
+                 <input type="text" id="identification" name="owner" placeholder="Enter Owner Information">
+                </div>
+               
+                <div class="data">
+                 <label for="email"></label>
+                 <input type="text" id="email" name="email" placeholder="Enter your email">
+                </div>
+                 
+             </form> 
+        </div>
+       
+        <div class="btn">
+            <div class="inner"></div>
+            <button>send</button>
+        </div>
+        
+    </div>
+  
+
+    <!-- <div class="center">
         <div class="container">
             <div class="text">Found item</div>
             <form action="#">
@@ -75,7 +109,7 @@
 
             </form>
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>
