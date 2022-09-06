@@ -48,9 +48,9 @@ a:hover{
     float: left;
 }
 .home-page-nav{
-    background-color: #5c14b9;
+    background-color: aqua;
     justify-content: space-between;
-    padding: 5px 5px;
+    padding: 20px;
     text-decoration: none;
     font-size: 1.3em;
     font-weight: 600;
@@ -60,7 +60,7 @@ a:hover{
 .home-page-nav ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .nav-bar{
     width: 100%;
