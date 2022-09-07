@@ -160,6 +160,10 @@ width: 100px;
     margin-left: 5%; 
     
 }
+.start{
+    justify-content: space-around;
+    display: flex;
+}
 #searchbtn{
     padding: 10px;
     margin-top: 20px;
