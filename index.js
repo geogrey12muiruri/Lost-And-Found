@@ -10,6 +10,7 @@ const logInSection = document.querySelector('.log-ins');
 const container = document.querySelector('.container');
 const closeButton = document.querySelector('.close-button');
 const closeSignUpButton = document.querySelector('.close-sign-up-button');
+const searchIcon = document.getElementById('search');
 
 
 // the navigation login button will call the login section
@@ -17,6 +18,11 @@ navLogIn.addEventListener('click', function () {
     logInSection.style.display = 'block';
     container.style.opacity = '0.1';
 });
+ //the search document icon will call the descritption form
+searchIcon. addEventListener('click', function () {
+
+})
+
 
 //the close button closes the login section .
 closeButton.addEventListener('click', function () {
