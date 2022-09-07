@@ -10,7 +10,8 @@ const logInSection = document.querySelector('.log-ins');
 const container = document.querySelector('.container');
 const closeButton = document.querySelector('.close-button');
 const closeSignUpButton = document.querySelector('.close-sign-up-button');
-const searchIcon = document.getElementById('search');
+const searchIcon = document.getElementById('searchbtn');
+const formElement = document.getElementById('hide_form')
 
 
 // the navigation login button will call the login section
@@ -19,9 +20,18 @@ navLogIn.addEventListener('click', function () {
     container.style.opacity = '0.1';
 });
  //the search document icon will call the descritption form
-searchIcon. addEventListener('click', function () {
+searchIcon. addEventListener('click', () => {
+    if(formElement.style.display === 'none') {
+        formElement.style.display = 'block';
+        searchIcon.innerHTML = 'close';
 
-})
+    }else{
+        formElement.style.display = 'none';
+        searchIcon.innerHTML = 'report found document';
+
+    }
+    
+});
 
 
 //the close button closes the login section .
