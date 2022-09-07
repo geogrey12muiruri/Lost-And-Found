@@ -23,7 +23,7 @@ navLogIn.addEventListener('click', function () {
 searchIcon. addEventListener('click', () => {
     if(formElement.style.display === 'none') {
         formElement.style.display = 'block';
-        searchIcon.innerHTML = 'close';
+        
 
     }else{
         formElement.style.display = 'none';
