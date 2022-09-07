@@ -27,8 +27,7 @@ searchIcon. addEventListener('click', () => {
 
     }else{
         formElement.style.display = 'none';
-        searchIcon.innerHTML = 'report found document';
-
+        
     }
     
 });
