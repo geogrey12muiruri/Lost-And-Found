@@ -24,10 +24,7 @@ button.addEventListener("click", () => {
     }
 });
  function onSuccess(position) {
-    let {latitude, longitude} = position.coords;
-    console.log(latitude, longitude)
-    https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=YOUR-API-KEY 
-    fetch()
+    console.log(position)
  }
 function onError(error) {
     if(error.code == 1) {
@@ -69,6 +66,8 @@ lostElement. addEventListener('click', () => {
     }
     
 });
+
+
 
 //the close button closes the login section .
 closeButton.addEventListener('click', function () {
