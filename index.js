@@ -33,6 +33,7 @@ searchIcon. addEventListener('click', () => {
 });
 
 
+
 //the close button closes the login section .
 closeButton.addEventListener('click', function () {
     logInSection.style.display = 'none';
