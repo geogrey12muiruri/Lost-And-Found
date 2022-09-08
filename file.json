@@ -1,0 +1,65 @@
+{
+    "latitude": -1.2799999713897705,
+    "longitude": 36.81999969482422,
+    "continent": "Africa",
+    "lookupSource": "ip geolocation",
+    "continentCode": "AF",
+    "localityLanguageRequested": "en",
+    "city": "Nairobi",
+    "countryName": "Kenya",
+    "countryCode": "KE",
+    "postcode": "",
+    "principalSubdivision": "Nairobi County",
+    "principalSubdivisionCode": "KE-30",
+    "plusCode": "6GCRPRC9+2X",
+    "locality": "Nairobi",
+    "localityInfo": {
+      "administrative": [
+        {
+          "name": "Kenya",
+          "description": "republic in East Africa",
+          "isoName": "Kenya",
+          "order": 2,
+          "adminLevel": 2,
+          "isoCode": "KE",
+          "wikidataId": "Q114",
+          "geonameId": 192950
+        },
+        {
+          "name": "Nairobi County",
+          "description": "county in Kenya",
+          "isoName": "Nairobi City",
+          "order": 4,
+          "adminLevel": 4,
+          "isoCode": "KE-30",
+          "wikidataId": "Q3335223",
+          "geonameId": 184742
+        },
+        {
+          "name": "Nairobi",
+          "description": "capital city of Kenya",
+          "order": 5,
+          "adminLevel": 3,
+          "wikidataId": "Q3870",
+          "geonameId": 184745
+        }
+      ],
+      "informative": [
+        {
+          "name": "Africa",
+          "description": "continent on the Earth's northern and southern hemispheres",
+          "order": 1,
+          "isoCode": "AF",
+          "wikidataId": "Q15",
+          "geonameId": 6255146
+        },
+        {
+          "name": "Nairobi",
+          "description": "capital city of Kenya",
+          "order": 3,
+          "wikidataId": "Q3870",
+          "geonameId": 184745
+        }
+      ]
+    }
+  }
