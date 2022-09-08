@@ -14,7 +14,32 @@ const searchIcon = document.getElementById('searchbtn');
 const formElement = document.getElementById('hide_form')
 const lostElement = document.getElementById('lostbtn')
 const elementForm = document.getElementById('l-hide_form')
+const button = document.getElementById("finder");
 
+button.addEventListener("click", () => {
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    } else {
+        button.innerText = "Your browser does not support";
+    }
+});
+ function onSuccess(position) {
+    let {latitude, longitude} = position.coords;
+    console.log(latitude, longitude)
+    https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=YOUR-API-KEY 
+    fetch()
+ }
+function onError(error) {
+    if(error.code == 1) {
+        button.innerText = 'You denied the request';
+    }else if(error.code == 2){
+        button.innerText = 'location not available ';
+
+    }else {
+        button.innerText = 'Something went wrong';
+    }
+    button.setAttribute("disabled", "true");
+}
 // the navigation login button will call the login section
 navLogIn.addEventListener('click', function () {
     logInSection.style.display = 'block';
@@ -44,7 +69,6 @@ lostElement. addEventListener('click', () => {
     }
     
 });
-
 
 //the close button closes the login section .
 closeButton.addEventListener('click', function () {
