@@ -25,6 +25,15 @@ button.addEventListener("click", () => {
 });
  function onSuccess(position) {
     console.log(position)
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    console.log(latitude + ' ' + longitude)
+    const geoApiUrl = `https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTg4U0JtcHdtQTJCNDhfZnI5dmlOa3FmSzM2Z3xBQ3Jtc0trWXdfQWNwbWtXY2FpZ1MtUW5lb1FTdk1iZjNBcENWYXV2aThwTkRHcVRqTGlNelJ6Z3VxRjc4MlNyYkMxS3dISXJOZjZVVTNYZWlBY1lVM3ZyaXhIUXZLQjItQWh5SDFHRlRycDREUUlzN1lnYl9QNA&q=https%3A%2F%2Fapi.bigdatacloud.net%2Fdata%2Freverse-geocode-client%3F${latitude}%3DXXXXXXXXXXXX%26${longitude}e%3DXXXXXXXXXXXX%26localityLanguage%3Den&v=VK9F8BWrOgY`
+    fetch( geoApiUrl)
+    .then(res => res.json)
+    .then(data => {
+        console.log(data)
+    })
  }
 function onError(error) {
     if(error.code == 1) {
