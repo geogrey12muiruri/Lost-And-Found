@@ -12,7 +12,8 @@ const closeButton = document.querySelector('.close-button');
 const closeSignUpButton = document.querySelector('.close-sign-up-button');
 const searchIcon = document.getElementById('searchbtn');
 const formElement = document.getElementById('hide_form')
-
+const lostElement = document.getElementById('lostbtn')
+const elementForm = document.getElementById('l-hide_form')
 
 // the navigation login button will call the login section
 navLogIn.addEventListener('click', function () {
@@ -32,6 +33,17 @@ searchIcon. addEventListener('click', () => {
     
 });
 
+lostElement. addEventListener('click', () => {
+    if(elementForm.style.display === 'none') {
+        elementForm.style.display = 'block';
+        
+
+    }else{
+        elementForm.style.display = 'none';
+        
+    }
+    
+});
 
 
 //the close button closes the login section .

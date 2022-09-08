@@ -155,7 +155,7 @@ width: 100px;
 }
 #searcbtn
 .report--item--description--form{
-    display: none;
+    /* display: none; */
     background-repeat: no-repeat;
     width: 80%;
     height: 500px;
@@ -172,7 +172,7 @@ width: 100px;
     
 }
 .report--l-item--description--form{
-    display: none;
+    /* display: none; */
     background-repeat: no-repeat;
     width: 80%;
     height: 500px;
