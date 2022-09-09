@@ -232,13 +232,16 @@ width: 100px;
 .transparent_background{
     position: relative;
     width: 80%;
-    height: 200px;
+    height: 300px;
     background: rgba(110, 113, 116, 0.7);
     border: 1px solid #ffffff;
     border-radius: 20px;
     color: black;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 60px;
+    font-size: large;
+    font-weight: 700;
+    
 }
 .list_items a{
     text-decoration: none;
