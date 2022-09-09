@@ -143,6 +143,7 @@ width: 100px;
 
 }
 #lostbtn{
+    display: none;
     padding: 7px 15px;
     background: #F97D0B;
     border: 1px #FFFFFF solid;
@@ -153,9 +154,11 @@ width: 100px;
 
 
 }
-#searcbtn
+#searcbtn{
+    display: none;
+}
 .report--item--description--form{
-    display: none; 
+    /* display: none;  */
     background-repeat: no-repeat;
     width: 80%;
     height: 500px;
@@ -171,21 +174,23 @@ width: 100px;
     margin-left: 5%; 
     
 }
-.report--l-item--description--form{
-    display: none; 
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 500px;
-    box-shadow: 5px 5px 5px lightgray;
-    position: relative;
-    background: rgba(110, 113, 116, 0.7);
-    border: 1px solid #4d4040;
-    border-radius: 20px;
-    color: black;
-    padding-left: 20px;
-    overflow: hidden;
-    justify-content: center;
-    margin-left: 5%; 
+#hide_form{
+     display: none; 
+     background-repeat: no-repeat;
+     width: 80%;
+     height: 500px;
+     box-shadow: 5px 5px 5px lightgray;
+     position: relative;
+     background: rgba(110, 113, 116, 0.7);
+     border: 1px solid #4d4040;
+     border-radius: 20px;
+     color: black;
+     padding-left: 20px;
+     overflow: hidden;
+     justify-content: center;
+     margin-left: 5%; 
+}
+   
 
 }
 .start{

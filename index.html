@@ -69,8 +69,7 @@
                </div>   
           </div>           
         </div>
-      
-        
+       
 
             
             <div class="start">
@@ -83,10 +82,11 @@
             
             <div class="uploadfile">
               <h3>upload file</h3>
-              <form action="/action_page.php">
-                <input type="file" id="myFile" name="filename">
-                <input type="submit">
+              <form class="form" action="./upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="inpFile" id="inpFile" multiple>
+                <button type="submit">Upload Files</button>
               </form>
+            
             </div>
             <div class="reviews">
                 <div>

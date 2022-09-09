@@ -15,6 +15,11 @@ const formElement = document.getElementById('hide_form')
 const lostElement = document.getElementById('lostbtn')
 const elementForm = document.getElementById('l-hide_form')
 const button = document.getElementById("finder");
+const inpFile = document.getElementById('inpFile');
+
+inpFile.addEventListener("change", function () {
+    console.log(myFile.files);
+});
 
 button.addEventListener("click", () => {
     if(navigator.geolocation) {
