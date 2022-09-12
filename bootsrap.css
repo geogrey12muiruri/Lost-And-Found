@@ -1,8 +1,7 @@
 body{
-    background-color: rgb(171, 228, 228);
+    background-color: #e79de154;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* height: 100vh; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -118,6 +117,7 @@ width: 100px;
 }
 .home-page-nav a{
    text-decoration: none;
+   justify-content: space-between;
 }
 .about_section{
     text-align: center;
@@ -203,6 +203,7 @@ width: 100px;
     border-radius: 12px;
     transform: none;
     background-color: silver;
+    margin-left: 60px;
     
 
 }
@@ -219,16 +220,6 @@ width: 100px;
     transform: scale(1.2);
 }
 
-.images{
-    width: 20%;
-    border-radius: 50%;
-    display: flex;
-}
-
-.footer{
-    background-color: #F97D0B;
-    margin-top: 50px;
-}
 .transparent_background{
     position: relative;
     width: 80%;
@@ -401,3 +392,12 @@ width: 100px;
     left: 30%;
     opacity:1;
 } 
+#formbutton{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 12px;
+    transform: none;
+    background-color: silver;
+    margin-left: 60px;
+
+}
