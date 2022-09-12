@@ -16,7 +16,24 @@ const lostElement = document.getElementById('lostbtn')
 const elementForm = document.getElementById('l-hide_form')
 const button = document.getElementById("finder");
 const inpFile = document.getElementById('inpFile');
+let forms = [];
+ //the form object can have the following properties. {name: "ID Card", description: "original", email: "greggambugua@gmail.com", phone: 0706565249}
+ const addForm = (ev)=> {
+    ev.preventDefault();
+                 let form = {
+                    name: document.getElementById("doc.name").value, 
+                    description: document.getElementById("describe").value, 
+                    email: document.getElementById("myEMAIL").value, 
+                    phone: document.getElementById("contact").value
+                }
+                 forms.push(form);
+                 document.forms[0].reset();
 
+
+ };
+ document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("formbutton").addEventListener('click', addForm)
+ } );
 inpFile.addEventListener("change", function () {
     console.log(myFile.files);
 });
