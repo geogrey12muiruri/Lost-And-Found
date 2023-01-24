@@ -1,300 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost and Found</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="bootsrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
-
-
-
-    ">
-    
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost and Found</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <main>
-      <header>
-        <a href="#"><div class="Logo" style="color: #000;"><h1>Lost and Found Center</h1></div></a>
-        <nav class="home-page-nav" style="background-color: solid aqua;">
-          <ul style="list-style: none;">
-            <li class="button" id="navLogIn"><a href="#">Login</a></li>
-            <li class="item_button" id="navSignUp" ><a href="#">Sign Up</a></li>    
-          </ul>
-        </nav>
-      </header>
-      <div class="background_image">
-          <div class="about_section">
-              <h3>About Us</h3>
-              <div class="transparent_background" >
-                  <p>Losing a valuable document or property can be really frustrating. in some instances it has resulted to people  <br>
-                      becoming victims of fraudelent activities<br> The Lost and Found center is determined to provide a lasting solution to this menace.<br>
-                      it provides a platform to register lost documents and properties and work hand in hand with the law enforcement agency to curb <br>malicious practices incase one loses an important document or property <br>
-                      Lost and found is designed in a way that is secure as users have to undergo authentification before they can provide any information to us.<br> 
-                      Lost and Found is by far the best way to unite users with their Lost documents and property.
-                  </p>
-              </div>
-          </div>
+  <div class="nav">
+    <div class="spinner">
+      <div class="spinnerin"></div>
+   </div>
+   <div>
+      <h3>Lost and Found Center</h3>
+   </div>
+   <div class="home">
+      <a href="index.html">Home</a>
+   </div>
+
+   <div class="about">
+      <a href="about.html">About</a>
+   </div>
+   <div class="login">
+      <a href="login.html" id="login-link">Login</a>
+   </div>
+   <div class="signup">
+      <a href="signup.html" id="signup-link">Sign Up</a>
+   </div>
+  </div>
+
+  <div class="container">
+    <h1>Lost it ? We Found it Here</h1>
+    <p>Advertise your lost items here</p>
+  </div>
+
+  <div class="login-button">
+    <button>
+      <a href="login.html" id="login-link">Login</a>
+    </button>
+  </div>
+
+ <!-- Signup Link -->
+<a href="#" data-toggle="modal" data-target="#signupModal">Signup</a>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-        <div class="GetStarted_section">
-          <button id="finder"><h3>Get Started</h3></button>
-          
-          <div class="report--item--description--form" id="hide_form">
-             <div class="sign-in-details">
-               <div>
-                 <p>document name</p>
-                 <input type="text" placeholder="enter document name" id="doc.name" />
-               </div>
-               <div>
-                 <p>item description*</p>
-                 <input type="text" placeholder="document description" id="describe" />
-               </div>
-               <div>
-                 <p>your Contact Information*</p>
-                 <input type="email" placeholder="Enter your E-mail address" id="myEMAIL" />
-               </div>
-               <div>
-                 <p>Phone Number*</p>
-                 <input type="number" placeholder="Enter your phone Number" id="contact"/>
-               </div>   
-               <button id="formbutton">Submit</button>
-          </div>           
-        </div>
-       
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
-            
-            <div class="start">
-             
-              <button id="searchbtn"><h3>report found  document</h3></button>
-              <button id="lostbtn"><h3>report lost document</h3></button>
-              <button id="lostbtn" style="background-color: #F97D0B;;" ><h3>report found  property</h3></button>
-              <button id="searchbtn"><h3>report lost  property</h3></button>
-            </div>
-            
-            <div class="uploadfile">
-              <h3>upload file</h3>
-              <form class="form" action="./upload" method="post" enctype="multipart/form-data">
-                <input type="file" name="inpFile" id="inpFile" multiple>
-                <button type="submit">Upload Files</button>
-              </form>
-            
-            </div>
-            <div class="reviews">
-                <div>
-                    <div class="re_views"><h3><b>Customer reviews</b></h3></div>
-                    <div class="star-ratings">
-                        <div class="card">
-                            <div class="customer-details">
-                                <div >
-                                
-                                    <p> <b>Patrick <br> Donholm,Nairobi</b></p>
-                                    <div> 
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div>
-                                <p>"Thanks to Lost And Found, i was able <br> to find my national identification<br>card easily and<br>swiftly"</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="customer-details">
-                                <div>
-                                    
-                                    <div>
-                                        <p> <b>Luga Dilu<br> Kapses,Eldoret</b></p>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span></span>
-                                        <span class="fa fa-starchecked"></span>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div>
-                                <p>"it was super easy to link<br>up with the Founder of my Phone<br>
-                                thanks to Lost And Found"</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="customer-details">
-                                <div>
-                                   
-                                    <div>
-                                        <p> <b>Otieno<br> Kondele,Kisumu</b></p>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div>
-                                <p>"Thanks to Lost and Found<br>i was able to locate my stolen motorbike<br>
-                                i would highly recommend it"</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-                    <div class="sign-ups">
-                        <div class="sign-up-section">
-                          <div>
-                              <button class="close-sign-up-button" type="button"> &times </button>
-                          </div>
-                          <div class="your-account">
-                            <h2>Sign Up for Your Account</h2>
-                          </div>
-                          <div class="continue-with-accounts">
-                            <div class="facebook">
-                              <div>
-                                <img
-                                  id="facebook-icon"
-                                  src="/src/images/icons8-facebook-48.png"
-                                  alt="facebook"
-                                />
-                              </div>
-                              <div>
-                                <p><a href="#facebook"> Continue with Facebook </a></p>
-                              </div>
-                            </div>
-                            <div class="google">
-                              <div>
-                                <img
-                                  id="google-icon"
-                                  src="/src/images/icons8-google.svg"
-                                  alt="google"
-                                />
-                              </div>
-                              <div>
-                                <p><a href="#google"> Continue with Google </a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="or">
-                            <p>OR</p>
-                          </div>
-                          <div class="sign-in-details">
-                            <div>
-                              <p>First Name</p>
-                              <input type="text" placeholder="First name" />
-                            </div>
-                            <div>
-                              <p>Last name*</p>
-                              <input type="text" placeholder="Last name" />
-                            </div>
-                            <div>
-                              <p>E-mail address*</p>
-                              <input type="email" placeholder="Enter your E-mail address" />
-                            </div>
-                            <div>
-                              <p>Password*</p>
-                              <input type="password" placeholder="Enter your password" />
-                            </div>
-                          </div>
-                          <div class="checkbox">
-                            <input type="checkbox" name="get-emails" id="get-emails" />
-                            <label for="get-emails"
-                              >I want to receive emails with useful information from Lost And Found</label
-                            >
-                            <p>
-                              By clicking Sign Up, you agree to our
-                              <a href="#terms-of-service">Terms of Service</a> and
-                              <a href="#privacy-policy">Privacy Policy</a>
-                            </p>
-                          </div>
-                          <div class="sign-up-button">
-                            <button id="sign-up" type="submit" onclick="signUpsPage()">
-                              SIGN UP
-                            </button>
-                          </div>
-                          <div class="alternative">
-                            <p>Already have an account? <a id="log-in-link" href="#log-in">Log In</a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="log-ins">
-                        <div class="log-in-section">
-                          <div>
-                              <button class="close-button" type="button"> &times </button>
-                          </div>
-                          <div class="your-account">
-                            <h2>Log in to Your Account</h2>
-                          </div>
-                          <div class="continue-with-accounts">
-                            <div class="facebook">
-                              <div>
-                                <img
-                                  id="facebook-icon"
-                                  src="/src/images/icons8-facebook-48.png"
-                                  alt="facebook"
-                                />
-                              </div>
-                              <div>
-                                <p><a href="#facebook"> Continue with Facebook </a></p>
-                              </div>
-                            </div>
-                            <div class="google">
-                              <div>
-                                <img
-                                  id="google-icon"
-                                  src="/src/images/icons8-google.svg"
-                                  alt="google"
-                                />
-                              </div>
-                              <div>
-                                <p><a href="#google"> Continue with Google </a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="or">
-                            <p>OR</p>
-                          </div>
-                          <div class="log-in-details">
-                            <div>
-                              <p>E-mail address*</p>
-                              <input type="email" placeholder="Enter your E-mail address" />
-                            </div>
-                            <div>
-                              <p>Password*</p>
-                              <input type="password" placeholder="Enter your password" />
-                            </div>
-                          </div>
-                          <div class="log-in-button">
-                            <button id="log-in" type="submit"> LOG IN </button>
-                          </div>
-                          <div class="forgot-password">
-                            <p><a href="forgot-password?">Forgot your password? </a></p>
-                          </div>
-                          <div class="alternative">
-                            <p>Don't have an account? <a id="sign-up-link" href="#sign-up">Sign Up</a></p>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-  </main>
+  
+  <div class="login-form" style="display: none;" id="login-form">
+    <form action="login.html" method="post">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Enter your password">
+      <button type="submit">Login</button>
+    </form>
+  </div>
 
   <script src="index.js"></script>
+  
+  
 </body>
 </html>
